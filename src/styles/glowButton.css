@@ -1,0 +1,7 @@
+.glow:hover {
+  box-shadow: 0 0 10px rgba(252, 168, 47, 0.4), 0 0 12px rgba(252, 168, 47, 0.4), 0 0 60px rgba(252, 168, 47, 0.4);
+}
+
+.normalGlow {
+  margin-left: 70%;
+}

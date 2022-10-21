@@ -1,0 +1,13 @@
+.correctAnswer {
+  background-color: #60bf88;
+  box-shadow: 0 0 2px #60bf88, 0 0 2px #60bf88, 0 0 20px #60bf88;
+  border: none;
+  color: #fff;
+}
+
+.wrongAnswer {
+  color: #fff;
+  border: none;
+  background-color: #ea8282;
+  box-shadow: 0 0 2px #ea8282, 0 0 2px #ea8282, 0 0 20px #ea8282;
+}
