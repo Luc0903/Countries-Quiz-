@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import AnswersButton from '../components/AnswersButton';
+import GameModeButton from '../components/GameModebutton';
 
 const GameMode = () => {
   return (
@@ -7,10 +7,10 @@ const GameMode = () => {
       <div className='bg-white w-full flex flex-col justify-center max-w-md rounded-3xl shadow-main-shadow h-72'>
         <p className=' text-center'>Choose a game mode!</p>
         <Link to='provinces'>
-          <AnswersButton text='Provinces' />
+          <GameModeButton text='Provinces' />
         </Link>
         <Link to='flags'>
-          <AnswersButton text='Flags' />
+          <GameModeButton text='Flags' />
         </Link>
       </div>
     </div>
