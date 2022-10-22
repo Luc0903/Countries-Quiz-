@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import AnswersButton from '../components/AnswersButton';
 import CountriesData from '../context/CountriesData';
 import useSortCountries from '../hooks/useSortCountries';
+import MainImage from '../assets/undraw_adventure_4hum 1.svg';
 import '../styles/glowButton.css';
 import '../styles/flagAlignment.css';
 import { v4 as uuid } from 'uuid';
@@ -13,8 +14,12 @@ const FlagsGame = () => {
 
   return (
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
+      <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
       {!gameNotStarted && (
-        <div className=' bg-white w-full max-w-md rounded-3xl  shadow-main-shadow'>
+        <div className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
+          <div className=' absolute w-36 h-36 -top-14 right-7'>
+            <img src={MainImage} alt='A man standing next to a globe' />
+          </div>
           <div className=' h-14 w-20 mt-8 flagAlignment '>
             <img
               className=' w-full object-cover rounded-sm flagBorder'

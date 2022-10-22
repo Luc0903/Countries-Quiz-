@@ -5,3 +5,7 @@
 .flagBorder {
   box-shadow: 0 4px 8px #0000004a;
 }
+
+.countryQuizAlignment {
+  transform: translateX(-50%);
+}
