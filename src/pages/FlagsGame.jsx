@@ -20,7 +20,7 @@ const FlagsGame = () => {
           <div className=' absolute w-36 h-36 -top-14 right-7'>
             <img src={MainImage} alt='A man standing next to a globe' />
           </div>
-          <div className=' h-14 w-20 mt-8 flagAlignment '>
+          <div className=' h-14 w-20 mt-8 flagAlignment mb-5'>
             <img
               className=' w-full object-cover rounded-sm flagBorder'
               src={correctAnswer.flags.png}
@@ -35,7 +35,7 @@ const FlagsGame = () => {
           </div>
           <button
             onClick={reset}
-            className=' NEXTbuttonAlignment w-20 h-10 text-white font-normal bg-main-yellow rounded-lg mb-4'
+            className=' NEXTbuttonAlignment w-20 h-10 text-white font-normal bg-main-yellow rounded-lg mb-4 glow'
           >
             Next
           </button>
