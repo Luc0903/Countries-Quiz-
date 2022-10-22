@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
   background-color: #5256a1;
+  background-image: url('./src/assets/background.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1000px) {

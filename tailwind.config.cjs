@@ -11,6 +11,7 @@ module.exports = {
         'dark-blue': '#2F527B',
         'violet-text': '#6066d0cc',
         'main-yellow': '#F9A826',
+        'titles-blue': '#1D355D',
       },
       boxShadow: {
         'main-shadow': '0 2px 4px rgba(252, 168, 47, 0.4);',

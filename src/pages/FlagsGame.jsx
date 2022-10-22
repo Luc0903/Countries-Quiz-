@@ -15,10 +15,14 @@ const FlagsGame = () => {
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
       {!gameNotStarted && (
         <div className=' bg-white w-full max-w-md rounded-3xl  shadow-main-shadow'>
-          <div className=' h-14 w-20 my-4 flagAlignment'>
-            <img className=' w-full object-cover rounded-sm' src={correctAnswer.flags.png} alt='country flag' />
+          <div className=' h-14 w-20 mt-8 flagAlignment '>
+            <img
+              className=' w-full object-cover rounded-sm flagBorder'
+              src={correctAnswer.flags.png}
+              alt='country flag'
+            />
           </div>
-          <p className=' flagAlignment'>Which country does this flag belong to? </p>
+          <p className=' flagAlignment text-titles-blue font-bold text-2xl'>Which country does this flag belong to? </p>
           <div>
             {gameUIPattern.map((choice) => {
               return <AnswersButton key={uuid()} text={choice.name.common} correctAnswer={correctAnswer} />;
