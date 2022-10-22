@@ -6,7 +6,7 @@ import { Navigate } from 'react-router-dom';
 
 const AnswersButton = (props) => {
   const { correctAnswerCount, setCorrectAnswerCount } = useContext(CheckerContext);
-  const [please, setPlease] = useState(false);
+  const [answerWasWrong, setAnswerWasWrong] = useState(false);
 
   const optionFromQuiz = useRef(null);
 
@@ -23,7 +23,7 @@ const AnswersButton = (props) => {
         }
       });
       window.setTimeout(() => {
-        setPlease(true);
+        setAnswerWasWrong(true);
       }, 500);
     }
   }
@@ -37,7 +37,7 @@ const AnswersButton = (props) => {
       className=' h-14 flex justify-between items-center my-4 border-2 border-violet-text text-violet-text font-medium rounded-xl w-3/4 mx-auto px-3 md:glow md:hover:bg-main-yellow hover:text-white md:hover:border-main-yellow'
     >
       {props.text}
-      {please && <Navigate to='/results' replace={false} />}
+      {answerWasWrong && <Navigate to='/results' replace={false} />}
     </div>
   );
 };
