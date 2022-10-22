@@ -3,6 +3,7 @@ import AnswersButton from '../components/AnswersButton';
 import CountriesData from '../context/CountriesData';
 import useSortCountries from '../hooks/useSortCountries';
 import '../styles/glowButton.css';
+import '../styles/flagAlignment.css';
 import { v4 as uuid } from 'uuid';
 
 const FlagsGame = () => {
@@ -14,10 +15,10 @@ const FlagsGame = () => {
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
       {!gameNotStarted && (
         <div className=' bg-white w-full max-w-md rounded-3xl  shadow-main-shadow'>
-          <div className=' h-14 w-20 my-4'>
+          <div className=' h-14 w-20 my-4 flagAlignment'>
             <img className=' w-full object-cover rounded-sm' src={correctAnswer.flags.png} alt='country flag' />
           </div>
-          <p>Which country does this flag belong to? </p>
+          <p className=' flagAlignment'>Which country does this flag belong to? </p>
           <div>
             {gameUIPattern.map((choice) => {
               return <AnswersButton key={uuid()} text={choice.name.common} correctAnswer={correctAnswer} />;
