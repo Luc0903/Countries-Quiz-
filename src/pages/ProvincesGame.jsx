@@ -16,7 +16,7 @@ const ProvincesGame = () => {
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
       <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
       {!gameNotStarted && (
-        <main className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
+        <div className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
           <div className=' absolute w-36 h-36 -top-14 right-7'>
             <img src={MainImage} alt='A man standing next to a globe' />
           </div>
@@ -34,7 +34,7 @@ const ProvincesGame = () => {
           >
             Next
           </button>
-        </main>
+        </div>
       )}
       {gameNotStarted && (
         <button

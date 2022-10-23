@@ -13,7 +13,7 @@ const FlagsGame = () => {
     useSortCountries(allCountriesData);
 
   return (
-    <main className=' h-screen w-screen flex flex-col justify-center items-center'>
+    <div className=' h-screen w-screen flex flex-col justify-center items-center'>
       <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
       {!gameNotStarted && (
         <div className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
@@ -53,7 +53,7 @@ const FlagsGame = () => {
           Start Game
         </button>
       )}
-    </main>
+    </div>
   );
 };
 
