@@ -9,7 +9,7 @@ const Home = () => {
           <img src={MainImage} className='mx-auto' alt='Main Image' />
         </figure>
         <p className=' font-bold text-dark-blue text-lg'>Welcome to my Quiz!</p>
-        <p className=' font-medium text-violet-text text-sm my-3 w-64 mx-auto'>
+        <p className=' font-semibold text-violet-text text-sm my-3 w-64 mx-auto'>
           You'll get the chance to guess flags or provinces. Be sure to pick one once you press the button.
         </p>
         <p className=' text-sm text-yellow-400 font-semibold mb-3'>Have Fun!</p>
