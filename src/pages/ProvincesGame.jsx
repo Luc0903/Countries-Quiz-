@@ -20,7 +20,7 @@ const ProvincesGame = () => {
           <div className=' absolute w-36 h-36 -top-14 right-7'>
             <img src={MainImage} alt='A man standing next to a globe' />
           </div>
-          <p className=' flagAlignment font-bold text-2xl text-dark-blue mt-14 mb-6'>
+          <p className=' flagAlignment font-bold text-2xl text-dark-blue mt-14 mb-6 max-w-xs'>
             {correctAnswer.capital[0]} is the capital of
           </p>
           <div>
