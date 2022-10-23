@@ -1,5 +1,4 @@
-import { createBrowserRouter, Route } from 'react-router-dom';
-import App from '../App';
+import { createBrowserRouter } from 'react-router-dom';
 import FinalResult from '../pages/FinalResult';
 import FlagsGame from '../pages/FlagsGame';
 import GameMode from '../pages/GameMode';
