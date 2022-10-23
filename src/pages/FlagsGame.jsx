@@ -13,20 +13,20 @@ const FlagsGame = () => {
     useSortCountries(allCountriesData);
 
   return (
-    <div className=' h-screen w-screen flex flex-col justify-center items-center'>
+    <main className=' h-screen w-screen flex flex-col justify-center items-center'>
       <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
       {!gameNotStarted && (
         <div className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
-          <div className=' absolute w-36 h-36 -top-14 right-7'>
+          <figure className=' absolute w-36 h-36 -top-14 right-7'>
             <img src={MainImage} alt='A man standing next to a globe' />
-          </div>
-          <div className=' h-14 w-20 mt-11 flagAlignment mb-1'>
+          </figure>
+          <figure className=' h-14 w-20 mt-11 flagAlignment mb-1'>
             <img
               className=' w-full object-cover rounded-sm flagBorder'
               src={correctAnswer.flags.png}
               alt='country flag'
             />
-          </div>
+          </figure>
           <p className=' flagAlignment text-titles-blue font-bold text-2xl'>Which country does this flag belong to? </p>
           <div>
             {gameUIPattern.map((choice) => {
@@ -53,7 +53,7 @@ const FlagsGame = () => {
           Start Game
         </button>
       )}
-    </div>
+    </main>
   );
 };
 
