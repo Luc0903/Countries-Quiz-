@@ -20,7 +20,7 @@ const FinalResult = () => {
           You got <span className=' text-results-green font-bold text-2xl'>{correctAnswerCount}</span> correct answers
         </p>
         <Link
-          className=' h-14 flex justify-center items-center my-4 border-2 border-violet-text text-violet-text font-medium rounded-xl w-3/4 mx-auto px-3 glow md:hover:bg-main-yellow hover:text-white md:hover:border-main-yellow'
+          className=' h-14 flex justify-center items-center my-4 border-2 border-violet-text text-violet-text font-medium rounded-xl w-3/4 mx-auto px-3 glow hover:bg-main-yellow hover:text-white hover:border-main-yellow'
           to='/gamemode'
           onClick={() => setCorrectAnswerCount(0)}
         >
