@@ -5,12 +5,12 @@ const CheckerContext = createContext(null);
 function AnswerCheckerProvider({ children }) {
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
 
-  const data = {
+  const counterData = {
     correctAnswerCount,
     setCorrectAnswerCount,
   };
 
-  return <CheckerContext.Provider value={data}>{children}</CheckerContext.Provider>;
+  return <CheckerContext.Provider value={counterData}>{children}</CheckerContext.Provider>;
 }
 
 export { AnswerCheckerProvider };
