@@ -11,11 +11,11 @@ function CountriesDataProvider({ children }) {
     localStorage.setItem('countriesCollection', JSON.stringify(countriesCollection));
   }
 
-  const data = {
+  const returnedData = {
     allCountriesData,
   };
 
-  return <CountriesData.Provider value={data}>{children}</CountriesData.Provider>;
+  return <CountriesData.Provider value={returnedData}>{children}</CountriesData.Provider>;
 }
 
 export { CountriesDataProvider };
