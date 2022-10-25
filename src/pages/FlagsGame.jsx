@@ -14,7 +14,7 @@ const FlagsGame = () => {
 
   return (
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
-      <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
+      <p className=' text-quiz-title font-bold text-2xl countryQuizAlignment'>COUNTRY QUIZ</p>
       {!gameNotStarted && (
         <div className=' bg-white w-full max-w-md rounded-3xl shadow-main-shadow relative'>
           <figure className=' absolute w-36 h-36 -top-14 right-7'>
