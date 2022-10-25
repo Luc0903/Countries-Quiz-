@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import GameModeButton from '../components/GameModebutton';
+import GameModeButton from '../components/GameModeButton';
 
 const GameMode = () => {
   return (
