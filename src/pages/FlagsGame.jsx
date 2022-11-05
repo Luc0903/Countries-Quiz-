@@ -6,6 +6,7 @@ import MainImage from '../assets/undraw_adventure_4hum 1.svg';
 import '../styles/glowButton.css';
 import '../styles/flagAlignment.css';
 import { v4 as uuid } from 'uuid';
+import StartGameButton from '../components/StartGameButton';
 
 const FlagsGame = () => {
   const { allCountriesData } = useContext(CountriesData);
@@ -41,18 +42,7 @@ const FlagsGame = () => {
           </button>
         </div>
       )}
-
-      {gameNotStarted && (
-        <button
-          className='bg-main-yellow text-white rounded-xl h-10 flex items-center w-64 justify-center mx-auto mb-4 shadow-main-shadow transition ease-in-out delay-75 glow'
-          onClick={() => {
-            setGameStart(false);
-            createNewPattern();
-          }}
-        >
-          Start Game
-        </button>
-      )}
+      {gameNotStarted && <StartGameButton setGameStart={setGameStart} createNewPattern={createNewPattern} />}
     </div>
   );
 };
