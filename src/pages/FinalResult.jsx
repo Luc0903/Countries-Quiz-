@@ -10,7 +10,7 @@ const FinalResult = () => {
 
   return (
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
-      <p className=' text-quiz-title font-bold text-3xl countryQuizAlignment'>COUNTRY QUIZ</p>
+      <p className=' text-quiz-title font-bold text-3xl'>COUNTRY QUIZ</p>
       <div className=' bg-white w-full max-w-md flex flex-col items-center rounded-3xl shadow-main-shadow'>
         <figure className=' w-60 h-32 my-14'>
           <img className=' w-full object-cover' src={WinnersImage} alt='Winners' />
