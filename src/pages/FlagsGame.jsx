@@ -8,9 +8,9 @@ import '../styles/flagAlignment.css';
 import { v4 as uuid } from 'uuid';
 
 const FlagsGame = () => {
-  const { allCountriesData } = useContext(CountriesData);
+  const { countriesCollection } = useContext(CountriesData);
 
-  const { gamePattern, correctAnswer, Reset } = useSortCountries(allCountriesData);
+  const { gamePattern, correctAnswer, Reset } = useSortCountries(countriesCollection);
 
   return (
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
