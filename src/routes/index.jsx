@@ -15,11 +15,11 @@ export const router = createBrowserRouter([
     element: <GameMode />,
   },
   {
-    path: '/gamemode/flags',
+    path: '/flags',
     element: <FlagsGame />,
   },
   {
-    path: '/gamemode/provinces',
+    path: '/provinces',
     element: <ProvincesGame />,
   },
   {

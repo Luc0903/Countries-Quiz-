@@ -5,7 +5,6 @@ const CountriesData = createContext(null);
 
 function CountriesDataProvider({ children }) {
   let allCountriesData = JSON.parse(localStorage.getItem('countriesCollection')) || [];
-
   if (allCountriesData.length == 0) {
     const { countriesCollection } = useFetch();
     localStorage.setItem('countriesCollection', JSON.stringify(countriesCollection));

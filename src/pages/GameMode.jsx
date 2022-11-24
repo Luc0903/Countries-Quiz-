@@ -6,12 +6,8 @@ const GameMode = () => {
     <div className=' h-screen w-screen flex flex-col justify-center items-center'>
       <div className='bg-white w-full flex flex-col justify-center max-w-md rounded-3xl shadow-main-shadow h-72'>
         <p className=' text-center text-violet-text font-bold text-2xl'>Choose a game mode!</p>
-        <Link to='provinces'>
-          <GameModeButton text='Provinces' />
-        </Link>
-        <Link to='flags'>
-          <GameModeButton text='Flags' />
-        </Link>
+        <GameModeButton text='Provinces' routeName="/provinces" />
+        <GameModeButton text='Flags' routeName="/flags" />
       </div>
     </div>
   );
