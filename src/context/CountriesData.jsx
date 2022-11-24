@@ -4,14 +4,10 @@ import { useFetch } from '../hooks/useFetch';
 const CountriesData = createContext(null);
 
 function CountriesDataProvider({ children }) {
-  let allCountriesData = JSON.parse(localStorage.getItem('countriesCollection')) || [];
-  if (allCountriesData.length == 0) {
-    const { countriesCollection } = useFetch();
-    localStorage.setItem('countriesCollection', JSON.stringify(countriesCollection));
-  }
-
+  const { countriesCollection } = useFetch();
+  
   const returnedData = {
-    allCountriesData,
+    countriesCollection,
   };
 
   return <CountriesData.Provider value={returnedData}>{children}</CountriesData.Provider>;
